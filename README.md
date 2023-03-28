@@ -1,12 +1,15 @@
 # Пример кластера MongoDB
 
 Пример кластера MongoDB, состоящий из:
-- :orange_square: двух шардов (наборы реплик по три узла); 
-- :green_square: серверов конфигурации (три узла реплик);
+- :green_square: двух шардов (наборы реплик по три узла); 
+- :orange_square: серверов конфигурации (три узла реплик);
 - :blue_square: двух маршрутизаторов Mongos.
 
-По итогу 11 контейнеров Docker (:blue_square::blue_square::green_square::green_square::green_square::orange_square::orange_square::orange_square::orange_square::orange_square::orange_square:), на которых будет работать кластер MongoDB.
+По итогу 11 контейнеров Docker (:blue_square::blue_square::orange_square::orange_square::orange_square::green_square::green_square::green_square::green_square::green_square::green_square:), на которых будет работать кластер MongoDB.
 
+![пример](https://user-images.githubusercontent.com/44034959/228374558-09bf5d69-4bf1-4e3f-8ede-0fba4a0bad56.png)
+
+[подробнее о шардировании в доке монги](https://www.mongodb.com/docs/manual/sharding/)
 
 При необходимости можно увеличить его ёмкость, подключая новые шарды.
 
